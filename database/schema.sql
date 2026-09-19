@@ -4,6 +4,7 @@ USE brdigital;
 CREATE TABLE users (
     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(120) NOT NULL,
+    username VARCHAR(80) NULL UNIQUE,
     email VARCHAR(190) NOT NULL UNIQUE,
     password_hash VARCHAR(255) NOT NULL,
     role ENUM('admin','team_member','client') NOT NULL DEFAULT 'client',
@@ -11,6 +12,20 @@ CREATE TABLE users (
     created_at DATETIME NOT NULL,
     updated_at DATETIME NOT NULL
 ) ENGINE=InnoDB;
+
+-- Initial User Seed (Louis Maximillian / louis)
+-- Note: Replace password_hash below or use php -r "echo password_hash('123louis', PASSWORD_DEFAULT);"
+INSERT INTO users (name, username, email, password_hash, role, status, created_at, updated_at)
+VALUES (
+    'Louis Maximillian',
+    'louis',
+    'louis@brdigital.click',
+    '$2y$10$wT8K.u9ZJz0F7Qy.7eH3l1Jd1qF6M3yP9B2c4V5b6N7m8O9p0q1r2',
+    'admin',
+    'active',
+    NOW(),
+    NOW()
+) ON DUPLICATE KEY UPDATE name=VALUES(name), username=VALUES(username);
 
 CREATE TABLE leads (
     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,

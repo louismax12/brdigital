@@ -66,11 +66,12 @@ if ($path === '/login' && $method === 'POST') {
         flash('error', 'Database belum terhubung.');
         redirect('/login');
     }
-    $statement = $db->prepare('SELECT id, name, email, password_hash, role FROM users WHERE email = ? LIMIT 1');
-    $statement->execute([trim($_POST['email'] ?? '')]);
+    $input = trim($_POST['email'] ?? $_POST['username'] ?? '');
+    $statement = $db->prepare('SELECT id, name, email, username, password_hash, role FROM users WHERE email = ? OR username = ? LIMIT 1');
+    $statement->execute([$input, $input]);
     $user = $statement->fetch();
     if (!$user || !password_verify($_POST['password'] ?? '', $user['password_hash'])) {
-        flash('error', 'Email atau password tidak sesuai.');
+        flash('error', 'Username/Email atau password tidak sesuai.');
         redirect('/login');
     }
     session_regenerate_id(true);

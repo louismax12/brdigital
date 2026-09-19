@@ -1,10 +1,52 @@
 <?php ob_start(); ?>
 <main>
     <section class="hero">
-        <div class="eyebrow">Tim Bumantara Digital Raileten</div>
-        <h1>Website yang membuat bisnis kecil terlihat <em>siap melangkah.</em></h1>
-        <p class="hero-copy">BRDigital membantu UMKM membangun identitas digital yang profesional, mudah dikelola, dan dekat dengan kebutuhan bisnis sehari-hari.</p>
-        <div class="hero-actions"><a class="button button-primary" href="/kontak">Konsultasi sekarang</a><a class="text-link" href="#layanan">Jelajahi layanan <span>→</span></a></div>
+        <div class="hero-grid">
+            <div class="hero-text">
+                <div class="eyebrow">Tim Bumantara Digital Raileten</div>
+                <h1>Website yang membuat bisnis kecil terlihat <em>siap melangkah.</em></h1>
+                <p class="hero-copy">BRDigital membantu UMKM membangun identitas digital yang profesional, mudah dikelola, dan dekat dengan kebutuhan bisnis sehari-hari.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="/kontak">Konsultasi sekarang</a>
+                    <a class="text-link" href="#layanan">Jelajahi layanan <span>→</span></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-stage">
+                    <div class="glow-ring"></div>
+                    
+                    <!-- Floating Pill Top Left -->
+                    <div class="floating-pill pill-top-left">
+                        <span class="pill-icon">🚀</span>
+                        <div class="pill-text">
+                            <strong>Performa Cepat</strong>
+                            <small>SEO & Mobile Ready</small>
+                        </div>
+                    </div>
+
+                    <!-- Main Floating Logo Card -->
+                    <div class="hero-showcase-card">
+                        <div class="logo-wrapper">
+                            <img src="/assets/logo_brdigital.jpeg" alt="BRDigital Logo" class="hero-brand-logo">
+                        </div>
+                        <div class="showcase-content">
+                            <h3>BRDigital</h3>
+                            <p>Tim Bumantara Digital Raileten</p>
+                            <span class="showcase-badge">Website Profesional UMKM</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Pill Bottom Right -->
+                    <div class="floating-pill pill-bottom-right">
+                        <span class="pill-icon">✨</span>
+                        <div class="pill-text">
+                            <strong>100% Transparan</strong>
+                            <small>Portal Klien Internal</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="hero-note"><strong>01</strong><span>Strategi, desain, dan pengembangan<br>yang dikerjakan bersama.</span></div>
     </section>
     <section class="intro-band"><p>BRDigital bukan sekadar membuat halaman. Kami merapikan cara bisnis Anda hadir, dipercaya, dan ditemukan di dunia digital.</p><span>BRD / 2026</span></section>

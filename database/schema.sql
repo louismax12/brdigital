@@ -13,13 +13,12 @@ CREATE TABLE users (
     updated_at DATETIME NOT NULL
 ) ENGINE=InnoDB;
 
--- Initial User Seed (Louis Maximillian / louis)
--- Note: Replace password_hash below or use php -r "echo password_hash('123louis', PASSWORD_DEFAULT);"
+-- Initial User Seed (Louis Maximillian / louis@digital.com)
 INSERT INTO users (name, username, email, password_hash, role, status, created_at, updated_at)
 VALUES (
     'Louis Maximillian',
-    'louis',
-    'louis@brdigital.click',
+    'louis@digital.com',
+    'louis@digital.com',
     '$2y$10$wT8K.u9ZJz0F7Qy.7eH3l1Jd1qF6M3yP9B2c4V5b6N7m8O9p0q1r2',
     'admin',
     'active',

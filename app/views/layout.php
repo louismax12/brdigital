@@ -12,7 +12,10 @@ $isDashboard = $isDashboard ?? false;
 <body class="<?= $isDashboard ? 'dashboard-body' : '' ?>">
 <?php if ($isDashboard): ?>
     <aside class="sidebar">
-        <a class="brand" href="/admin">BR<span>Digital</span></a>
+        <a class="brand brand-with-logo" href="/admin">
+            <img src="/assets/logo_brdigital.jpeg" alt="BRDigital Logo" class="brand-logo">
+            <span>BR<span>Digital</span></span>
+        </a>
         <p class="sidebar-label">Workspace</p>
         <nav>
             <a href="/admin">Ringkasan</a>
@@ -24,7 +27,10 @@ $isDashboard = $isDashboard ?? false;
     <main class="dashboard-main">
 <?php else: ?>
     <header class="site-header">
-        <a class="brand" href="/">BR<span>Digital</span></a>
+        <a class="brand brand-with-logo" href="/">
+            <img src="/assets/logo_brdigital.jpeg" alt="BRDigital Logo" class="brand-logo">
+            <span>BR<span>Digital</span></span>
+        </a>
         <nav>
             <a href="/#layanan">Layanan</a>
             <a href="/#proses">Proses kerja</a>

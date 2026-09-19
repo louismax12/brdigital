@@ -102,7 +102,7 @@ if ($path === '/admin' && $method === 'GET') {
 
 if ($path === '/admin/leads' && $method === 'GET') {
     $requireLogin();
-    $leads = $db ? $db->query('SELECT business_name, contact_name, whatsapp, service_type, status FROM leads ORDER BY created_at DESC')->fetchAll() : [];
+    $leads = $db ? $db->query('SELECT id, business_name, contact_name, whatsapp, email, service_type, message, status, source, created_at FROM leads ORDER BY created_at DESC')->fetchAll() : [];
     render('leads', ['leads' => $leads]);
     exit;
 }

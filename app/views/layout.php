@@ -4,8 +4,8 @@ $isDashboard = $isDashboard ?? false;
 ?><!doctype html>
 <html lang="id">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <meta name="theme-color" content="#17221d">
     <title><?= e($pageTitle) ?> | BRDigital</title>
     <link rel="stylesheet" href="/assets/style.css">
 </head>

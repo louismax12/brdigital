@@ -137,6 +137,13 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
   z-index: 1;
   border: none;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.hero-video-container iframe.vimeo-bg-iframe.active {
+  opacity: 1;
+  z-index: 2;
 }
 
 .hero-video-overlay {
@@ -1011,11 +1018,30 @@ html, body {
   
   /* Hero Section Mobile Adaptation */
   .hero {
-    padding: 32px 5vw 36px;
-    min-height: auto;
-    background: 
-      radial-gradient(circle at 50% 10%, #e1ed9a 0 40%, transparent 41%),
-      linear-gradient(180deg, #f5f5ef 40%, #e8efd4 100%);
+    padding: 80px 5vw 40px;
+    min-height: 100vh;
+    height: auto;
+    background: linear-gradient(180deg, #0d1410 0%, #17221d 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-video-container {
+    display: none !important;
+  }
+  
+  .hero-video-container iframe.vimeo-bg-iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177.77vh;
+    pointer-events: none;
+    z-index: 1;
+    border: none;
   }
   
   .hero-grid {

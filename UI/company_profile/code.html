@@ -1,40 +1,124 @@
-<?php ob_start(); ?>
+<!DOCTYPE html><html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>BRDigital - Agensi Transformasi Digital UMKM Indonesia</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#EA580C",
+            "primary-dark": "#C2410C",
+            "primary-light": "#FFF7ED",
+            "canvas-warm": "#FAF9F6",
+            "surface-pure": "#FFFFFF",
+            "slate-obsidian": "#0F172A",
+            "slate-muted": "#64748B",
+            "slate-border": "#E2E8F0",
+            "accent-teal": "#008378",
+            "accent-emerald": "#16A34A"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk", "sans-serif"],
+            "body": ["DM Sans", "sans-serif"]
+          },
+          boxShadow: {
+            "subtle": "0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05)",
+            "elevated": "0 10px 30px -5px rgba(15, 23, 42, 0.06), 0 4px 10px -3px rgba(15, 23, 42, 0.03)",
+            "glow-orange": "0 12px 25px -4px rgba(234, 88, 12, 0.22)"
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      body {
+        background-color: #FAF9F6;
+        color: #0F172A;
+        font-family: 'DM Sans', sans-serif;
+      }
+    }
+  </style>
+</head>
+<body class="bg-canvas-warm text-slate-obsidian antialiased selection:bg-orange-100 selection:text-primary">
+<!-- Top Announcement Bar -->
+<div class="w-full bg-slate-obsidian text-slate-200 py-2 px-4 text-xs font-medium border-b border-slate-800">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-primary text-white tracking-wider uppercase">Program 2025</span>
+<span class="hidden sm:inline">Subsidi Digitalisasi UMKM Tahap I: Potongan setup katalog 30% untuk 50 pendaftar pertama bulan ini.</span>
+<span class="sm:hidden">Subsidi Digitalisasi UMKM 2025 Tersedia!</span>
+</div>
+<a class="text-orange-400 hover:text-white font-semibold inline-flex items-center gap-1 transition-colors" href="#konsultasi">
+        Klaim Kuota <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Primary Sticky Navigation -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-border">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Logo Branding -->
+<a class="flex items-center gap-3 group" href="#">
+<img alt="BRDigital Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1VcH9P7DU1F8-zi8SW8HSbSbnhCK58E2Q5uIqnxSZ4XuRvAoLFskn97dyYhlokfA4RVXlj1vmivdlZX7Iow_jKqs9QrhYuvETo8V93EQAou6nQDcqmNTc0JKbZ9rh5b7g5GkOjytkixaYZ1te9DvQP6GS2n04U18U7alYL8V5NnNajVzJOn05iJkTx_4zyv7GSvdxIqfbOszMM_9VHklyEf-zg8rWIqcgRskUsaBL85kXepiwPgnprHKGs">
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden md:flex items-center gap-1 text-sm font-medium text-slate-600 bg-slate-100/80 p-1.5 rounded-full border border-slate-200/60">
+<a class="px-4 py-1.5 rounded-full text-slate-700 hover:text-slate-obsidian hover:bg-white transition-all" href="#solusi">Layanan Pilar</a>
+<a class="px-4 py-1.5 rounded-full text-slate-700 hover:text-slate-obsidian hover:bg-white transition-all" href="#komparasi">Sebelum vs Sesudah</a>
+<a class="px-4 py-1.5 rounded-full text-slate-700 hover:text-slate-obsidian hover:bg-white transition-all" href="#portofolio">Studi Kasus</a>
+<a class="px-4 py-1.5 rounded-full text-slate-700 hover:text-slate-obsidian hover:bg-white transition-all" href="#harga">Paket Investasi</a>
+</nav>
+<!-- Action Button Group -->
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-primary px-3 py-2 transition-colors" href="https://wa.me/628123456789" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-emerald-600">chat</span>
+<span>Tanya CS (Live)</span>
+</a>
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary hover:bg-primary-dark text-white text-xs sm:text-sm font-semibold shadow-glow-orange hover:shadow-none transition-all active:scale-95" href="#konsultasi">
+<span>Konsultasi Gratis</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</header>
 <main>
 <!-- HERO SECTION: Asymmetric Editorial High-Trust -->
-<section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
-<!-- Full Section Backdrop Video -->
-<video src="https://nos.wjv-1.neo.id/millian/kocimos/brdigital_backdrop_vidio.mp4" class="absolute inset-0 w-full h-full object-cover z-0" autoplay loop muted playsinline></video>
-<!-- Full Section Translucent Glass Overlay -->
-<div class="absolute inset-0 bg-white/75 backdrop-blur-[6px] z-0"></div>
-
-<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden bg-gradient-to-b from-[#FAF9F6] via-white to-[#FAF9F6]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 <!-- Left Column: Copy & Authority Proof -->
 <div class="lg:col-span-7 space-y-6 text-left">
-<div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/80 border border-orange-200 text-primary text-xs font-semibold backdrop-blur-md shadow-sm">
+<div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200/70 text-primary text-xs font-semibold">
 <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-<span>Agensi Transformasi Digital UMKM — Open Layanan Mulai Rp 50.000</span>
+<span>Agensi Transformasi Digital UMKM #1 di Indonesia</span>
 </div>
-<h1 class="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15]">
-              Website modern yang mengubah bisnis lokal jadi <span class="relative inline-block text-primary">brand nasional.<svg class="absolute -bottom-1 left-0 w-full h-2.5 text-orange-300 -z-10" preserveAspectRatio="none" viewBox="0 0 100 10"><path d="M0 5 Q 50 10, 100 5" fill="none" stroke="currentColor" stroke-width="4"></path></svg></span>
+<h1 class="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-obsidian leading-[1.15]">
+              Website modern yang mengubah bisnis lokal jadi <span class="relative inline-block text-primary">brand nasional.<svg class="absolute -bottom-1 left-0 w-full h-2.5 text-orange-200 -z-10" preserveAspectRatio="none" viewBox="0 0 100 10"><path d="M0 5 Q 50 10, 100 5" fill="none" stroke="currentColor" stroke-width="4"></path></svg></span>
 </h1>
-<p class="text-base sm:text-lg text-slate-800 font-medium leading-relaxed max-w-2xl drop-shadow-sm">
+<p class="text-base sm:text-lg text-slate-muted leading-relaxed max-w-2xl">
               Hentikan pencatatan manual di nota kertas dan chat WhatsApp yang menumpuk. Kami mendesain website pesanan cepat berintegrasi QRIS resmi, katalog barcode meja, dan sinkronisasi stok otomatis yang siap tayang dalam 7 hari kerja.
             </p>
 <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-<a class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-primary hover:bg-primary-dark text-white font-semibold text-sm shadow-glow-orange transition-all" href="<?= url('contact') ?>">
+<a class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-primary hover:bg-primary-dark text-white font-semibold text-sm shadow-glow-orange transition-all" href="#konsultasi">
 <span>Mulai Konsultasi Gratis (15 Menit)</span>
 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
-<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-white/90 border border-slate-300 hover:border-slate-400 text-slate-900 font-semibold text-sm transition-all hover:bg-white backdrop-blur-sm" href="#portofolio">
-<span class="material-symbols-outlined text-[18px] text-slate-700">play_circle</span>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-white border border-slate-300 hover:border-slate-400 text-slate-800 font-semibold text-sm transition-all hover:bg-slate-50" href="#portofolio">
+<span class="material-symbols-outlined text-[18px] text-slate-600">play_circle</span>
 <span>Lihat Studi Kasus Klien</span>
 </a>
 </div>
 <!-- Trust rating and mini badges -->
-<div class="pt-8 border-t border-slate-300/60 flex flex-wrap items-center gap-6 text-xs text-slate-800">
+<div class="pt-8 border-t border-slate-200/80 flex flex-wrap items-center gap-6 text-xs text-slate-600">
 <div class="flex items-center gap-2">
-<div class="flex text-amber-500 text-base drop-shadow-sm">
+<div class="flex text-amber-400 text-base">
 <span class="material-symbols-outlined text-[18px] fill-current">star</span>
 <span class="material-symbols-outlined text-[18px] fill-current">star</span>
 <span class="material-symbols-outlined text-[18px] fill-current">star</span>
@@ -43,21 +127,93 @@
 </div>
 <div>
 <span class="font-bold text-slate-900 text-sm">4.9 / 5.0</span>
-<span class="text-slate-700 font-medium"> dari 120+ pemilik UMKM</span>
+<span class="text-slate-500"> dari 120+ pemilik UMKM</span>
 </div>
 </div>
-<div class="h-4 w-px bg-slate-400/50 hidden sm:block"></div>
-<div class="flex items-center gap-4 text-slate-800">
-<span class="font-bold flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-600 text-[16px]">verified</span> QRIS Bank Indonesia</span>
-<span class="font-bold flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-600 text-[16px]">bolt</span> Live &lt; 7 Hari</span>
+<div class="h-4 w-px bg-slate-300 hidden sm:block"></div>
+<div class="flex items-center gap-4 text-slate-500">
+<span class="font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-accent-teal text-[16px]">verified</span> QRIS Bank Indonesia</span>
+<span class="font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-accent-teal text-[16px]">bolt</span> Live &lt; 7 Hari</span>
 </div>
 </div>
 </div>
-<!-- Right Column: Video Integration -->
+<!-- Right Column: Interactive Editorial Mockup Card -->
 <div class="lg:col-span-5 relative">
+<!-- Subtle backdrop halo -->
 <div class="absolute -inset-2 bg-gradient-to-tr from-orange-100 to-amber-50 rounded-2xl filter blur-xl opacity-70 -z-10"></div>
-<div class="bg-white rounded-2xl border border-slate-200 shadow-elevated overflow-hidden p-2">
-  <video src="https://nos.wjv-1.neo.id/millian/kocimos/brdigital_backdrop_vidio.mp4" class="w-full h-auto rounded-xl object-cover" autoplay loop muted playsinline></video>
+<div class="bg-white rounded-2xl border border-slate-200 shadow-elevated p-6 space-y-5">
+<!-- Window Chrome -->
+<div class="flex items-center justify-between pb-4 border-b border-slate-100">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-red-400"></span>
+<span class="w-3 h-3 rounded-full bg-amber-400"></span>
+<span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+<span class="text-[11px] font-mono text-slate-400 ml-2">app.brdigital.id/kopi-senja</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+                  Sistem Realtime
+                </span>
+</div>
+<!-- Metric Spotlight -->
+<div class="grid grid-cols-2 gap-3">
+<div class="p-3.5 rounded-xl bg-orange-50/60 border border-orange-100">
+<span class="text-[11px] font-medium text-slate-500 uppercase tracking-wide">Omset Hari Ini</span>
+<div class="text-xl font-headline font-bold text-slate-obsidian mt-0.5">Rp 5.420.000</div>
+<span class="text-[10px] font-semibold text-emerald-600 flex items-center gap-0.5 mt-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +38.4% vs kemarin
+                  </span>
+</div>
+<div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+<span class="text-[11px] font-medium text-slate-500 uppercase tracking-wide">Pelanggan QR Scan</span>
+<div class="text-xl font-headline font-bold text-slate-obsidian mt-0.5">142 Pesanan</div>
+<span class="text-[10px] font-medium text-slate-500 mt-1 block">Waktu respon kasir: 8 detik</span>
+</div>
+</div>
+<!-- Incoming Order Pill Simulation -->
+<div class="space-y-2.5">
+<div class="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center justify-between">
+<span>Antrean Masuk (Otomatis)</span>
+<span class="text-[11px] font-normal text-slate-400">Baru saja</span>
+</div>
+<div class="p-3 rounded-lg bg-slate-50 border border-slate-200/80 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-orange-100 text-primary flex items-center justify-center font-bold text-xs">
+                      #128
+                    </div>
+<div>
+<div class="text-xs font-semibold text-slate-900">2x Es Kopi Gula Aren + 1x Toast</div>
+<div class="text-[11px] text-slate-500">Meja No. 04 • QRIS Dinamis Lunas</div>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold">Cetak Dapur</span>
+</div>
+<div class="p-3 rounded-lg bg-slate-50 border border-slate-200/80 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs">
+                      #127
+                    </div>
+<div>
+<div class="text-xs font-semibold text-slate-900">1x Biji Kopi Robusta 250gr</div>
+<div class="text-[11px] text-slate-500">Pengiriman JNE Express • WhatsApp Order</div>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-amber-100 text-amber-800 text-[10px] font-bold">Dikemas</span>
+</div>
+</div>
+<!-- Floating Live Notification Mock -->
+<div class="p-3 rounded-xl bg-gradient-to-r from-slate-900 to-slate-800 text-white flex items-center justify-between text-xs shadow-md">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-emerald-500 text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">point_of_sale</span>
+</div>
+<div>
+<div class="font-bold">Notifikasi Settlement Bank</div>
+<div class="text-[10px] text-slate-300">Dana Rp 124.000 masuk ke Rekening BCA Merchant</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-emerald-400">check_circle</span>
+</div>
 </div>
 </div>
 </div>
@@ -386,13 +542,13 @@
 </li>
 </ul>
 </div>
-<a class="mt-8 block w-full py-3 text-center rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs sm:text-sm transition-colors" href="<?= url('contact') ?>">
+<a class="mt-8 block w-full py-3 text-center rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs sm:text-sm transition-colors" href="#konsultasi">
               Pilih Paket Starter
             </a>
 </div>
 <!-- Paket 2: Scale-Up (Most Popular) -->
 <div class="bg-white rounded-2xl p-7 border-2 border-primary shadow-elevated flex flex-col justify-between relative transform lg:-translate-y-2">
-<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-[11px] font-bold uppercase tracking-wider py-1 px-4 rounded-full shadow-md whitespace-nowrap">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-[11px] font-bold uppercase tracking-wider py-1 px-4 rounded-full shadow-md">
               Paling Populer &amp; Direkomendasikan
             </div>
 <div>
@@ -433,7 +589,7 @@
 </li>
 </ul>
 </div>
-<a class="mt-8 block w-full py-3 text-center rounded-lg bg-primary hover:bg-primary-dark text-white font-semibold text-xs sm:text-sm shadow-glow-orange transition-all" href="<?= url('contact') ?>">
+<a class="mt-8 block w-full py-3 text-center rounded-lg bg-primary hover:bg-primary-dark text-white font-semibold text-xs sm:text-sm shadow-glow-orange transition-all" href="#konsultasi">
               Mulai Akselerasi Bisnis
             </a>
 </div>
@@ -473,7 +629,7 @@
 </li>
 </ul>
 </div>
-<a class="mt-8 block w-full py-3 text-center rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs sm:text-sm transition-colors" href="<?= url('contact') ?>">
+<a class="mt-8 block w-full py-3 text-center rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs sm:text-sm transition-colors" href="#konsultasi">
               Diskusi Solusi Custom
             </a>
 </div>
@@ -505,13 +661,13 @@
 </div>
 <div class="flex items-center gap-3 text-xs sm:text-sm text-slate-700">
 <span class="material-symbols-outlined text-emerald-600 text-[20px]">lock</span>
-<span>Data bisnis &amp; contact terjamin kerahasiaannya</span>
+<span>Data bisnis &amp; kontak terjamin kerahasiaannya</span>
 </div>
 </div>
 </div>
 <!-- Right form -->
 <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
-<form class="space-y-4" action="<?= url('contact') ?>" method="GET">
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Terima kasih! Spesialis digital kami akan menghubungi WhatsApp Anda dalam 15 menit.');">
 <div>
 <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Nama Pemilik / Nama Usaha</label>
 <input class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none bg-slate-50/50" placeholder="Contoh: Pak Budi - Resto Rasa Senja" required="" type="text">
@@ -548,4 +704,69 @@
 </div>
 </section>
 </main>
-<?php $content = ob_get_clean(); $pageTitle = 'Website profesional untuk UMKM'; require __DIR__ . '/layout.php'; ?>
+<!-- CORPORATE HIGH-TRUST FOOTER -->
+<footer class="bg-slate-obsidian text-slate-400 pt-16 pb-12 border-t border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+<!-- Brand summary (2 cols) -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-2">
+<img alt="BRDigital Logo" class="h-8 w-auto brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1VcH9P7DU1F8-zi8SW8HSbSbnhCK58E2Q5uIqnxSZ4XuRvAoLFskn97dyYhlokfA4RVXlj1vmivdlZX7Iow_jKqs9QrhYuvETo8V93EQAou6nQDcqmNTc0JKbZ9rh5b7g5GkOjytkixaYZ1te9DvQP6GS2n04U18U7alYL8V5NnNajVzJOn05iJkTx_4zyv7GSvdxIqfbOszMM_9VHklyEf-zg8rWIqcgRskUsaBL85kXepiwPgnprHKGs">
+</div>
+<p class="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed">
+            Agensi digitalisasi &amp; modernisasi sistem transaksi resmi untuk mempercepat skala bisnis UMKM mandiri di seluruh penjuru Indonesia.
+          </p>
+<div class="pt-2 flex items-center gap-4 text-slate-300">
+<span class="inline-flex items-center gap-1.5 text-xs text-emerald-400">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Server Cloud Uptime 99.8%
+            </span>
+</div>
+</div>
+<!-- Links Pilar Layanan -->
+<div class="space-y-3">
+<h4 class="text-xs font-bold text-white uppercase tracking-wider">Solusi Digital</h4>
+<ul class="space-y-2 text-xs">
+<li><a class="hover:text-white transition-colors" href="#solusi">Web Katalog QR Meja</a></li>
+<li><a class="hover:text-white transition-colors" href="#solusi">Payment Gateway QRIS</a></li>
+<li><a class="hover:text-white transition-colors" href="#solusi">Otomasi WhatsApp CRM</a></li>
+<li><a class="hover:text-white transition-colors" href="#solusi">Cloud Mini ERP Stok</a></li>
+<li><a class="hover:text-white transition-colors" href="#solusi">Printer Kasir Nirkabel</a></li>
+</ul>
+</div>
+<!-- Links Navigasi Cepat -->
+<div class="space-y-3">
+<h4 class="text-xs font-bold text-white uppercase tracking-wider">Navigasi Utama</h4>
+<ul class="space-y-2 text-xs">
+<li><a class="hover:text-white transition-colors" href="#solusi">Layanan Pilar</a></li>
+<li><a class="hover:text-white transition-colors" href="#komparasi">Sebelum vs Sesudah</a></li>
+<li><a class="hover:text-white transition-colors" href="#portofolio">Studi Kasus Klien</a></li>
+<li><a class="hover:text-white transition-colors" href="#harga">Paket &amp; Struktur Biaya</a></li>
+<li><a class="hover:text-white transition-colors" href="#konsultasi">Klaim Demo Gratis</a></li>
+</ul>
+</div>
+<!-- Alamat Kantor -->
+<div class="space-y-3">
+<h4 class="text-xs font-bold text-white uppercase tracking-wider">Sentra Operasional</h4>
+<p class="text-xs leading-relaxed text-slate-400">
+            Sentra Transformasi Bisnis UMKM<br>
+            Gedung Digital Kreatif Lt. 3<br>
+            Jl. TB Simatupang, Jakarta Selatan<br>
+            DKI Jakarta 12560<br>
+<span class="text-white font-medium mt-1 inline-block">halo@brdigital.id</span>
+</p>
+</div>
+</div>
+<!-- Bottom Credits & Legal -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+<div>
+          © 2025 BRDigital Nusantara. Hak Cipta Dilindungi Undang-Undang Republik Indonesia.
+        </div>
+<div class="flex items-center gap-6">
+<a class="hover:text-slate-300 transition-colors" href="#">Kebijakan Privasi</a>
+<a class="hover:text-slate-300 transition-colors" href="#">Syarat &amp; Ketentuan</a>
+<a class="hover:text-slate-300 transition-colors" href="#">SLA Dukungan Teknis</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
